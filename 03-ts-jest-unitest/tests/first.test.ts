@@ -1,5 +1,5 @@
 import { Calculadora } from "../src/calculadora";
-import { Task } from "../../04-lab1-tasks/src/task";
+//import { Task } from "../../04-lab1-tasks/src/task";
 
 test.skip('adds 1 + 2 to equal 3', () => {
     // expect(sum(1, 2)).toBe(3);
@@ -47,6 +47,7 @@ test.skip('retornar el numero mas grande', () => {
     //expect(actual).toBeTruthy()
 });
 
+/*
 test('retornar si numero es par', () => {
     //TDD 
 
@@ -67,7 +68,7 @@ test('retornar si numero es par', () => {
     //expect(actual).toBeTruthy()
 });
 
-
+*/
 
 
 

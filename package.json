@@ -4,7 +4,7 @@
   "description": "description lol",
   "main": "index.js",
   "scripts": {
-    "test": "jest --forceExit --collectCoverage",
+    "test": "jest",
     "hello": "npx ts-node ./01-ts-fundamentals/01-hello.ts"
   },
   "author": "",

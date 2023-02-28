@@ -1,0 +1,30 @@
+export class Tarea {
+    constructor(){}
+
+    static verficaSiLaCadenaEsUnPalindromo(strCadena: string) {
+        const cadenaLimpia = strCadena.split(' ').join('').toLowerCase();
+        let cadenaInversa = '';
+        for (let i = cadenaLimpia.length - 1; i >= 0; i--) {
+            cadenaInversa += cadenaLimpia[i];
+        }
+        return cadenaLimpia === cadenaInversa;
+    }
+
+    static obtenerNumeroMayorDeUnArray(arrNumeros: number[]) {
+        let numeroMayor = arrNumeros[0]; 
+        for (let posicion = 1; posicion < arrNumeros.length; posicion++) {
+          if (arrNumeros[posicion] > numeroMayor) {        
+            numeroMayor = arrNumeros[posicion]; 
+          }
+        }      
+        return numeroMayor; 
+    }
+
+    static convertirCadenaAUnArray(cadena: string) {
+        const arrResultante = [];
+        for (let posicion = 0; posicion < cadena.length; posicion++) {
+            arrResultante.push(cadena.charAt(posicion));
+        }
+        return arrResultante;
+    }
+}
